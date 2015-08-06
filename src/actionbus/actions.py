@@ -102,7 +102,7 @@ class ActionServer(object):
 
     def _send_feedback(self, **kwargs):
         status = kwargs.get('status', self.feedback)
-        duration = kwargs.get('duration', 0.0)
+        duration = kwargs.get('duration', self.duration)
         info = kwargs.get('info', {})
         id = kwargs.get('id', self.id)
 

@@ -7,17 +7,17 @@
 # Fields not marked as optional are mandatory.
 #
 #   id          =   can be set to 0 to broadcast a system signal (e.g. emergency stop), normal nodes should reject the message if id = 0
-#   duration    =   can be set to 0 to signal a timeless action (e.g. switching things on or off)
+#   timeout     =   can be set to 0 to signal a timeless action (e.g. switching things on or off)
 #
 
 # action commands
-uint8 ACTION_START=0                       # resume action after being paused
-uint8 ACTION_PAUSE=1                       # pause the action
-uint8 ACTION_ABORT=2                       # cancel the action
+uint8 ACTION_START=0                            # resume action after being paused
+uint8 ACTION_PAUSE=1                            # pause the action
+uint8 ACTION_ABORT=2                            # cancel the action
 
 # action feedback
-uint8 FEED_SINGLE=0
-uint8 FEED_STREAM=1
+uint8 FEED_SINGLE=0                             # onetime feedback style
+uint8 FEED_STREAM=1                             # continuous feedback style
 
 # message body
 Header header                                   # header field used for keep track of timing
