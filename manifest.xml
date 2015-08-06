@@ -1,0 +1,18 @@
+<package>
+  <description brief="actionbus">
+
+     actionbus
+
+  </description>
+  <author>valerio</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/actionbus</url>
+  <depend package="std_msgs"/>
+  <depend package="std_srvs"/>
+  <depend package="diagnostic_msgs"/>
+  <depend package="rospy"/>
+
+</package>
+
+
